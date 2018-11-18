@@ -6,3 +6,12 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
+zone "espinheira.local" {
+	type master;
+	file "db.espinheira.local";
+};
+
+zone "5.16.172.in-addr.arpa" {
+	type master;
+	file "db.172.16.5";
+};
